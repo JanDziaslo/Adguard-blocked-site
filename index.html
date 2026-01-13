@@ -16,7 +16,14 @@
             </div>
             
             <h1 class="h3 fw-bold mb-3">Strona zablokowana</h1>
-            
+
+            <div class="my-3">
+                <span class="text-secondary">Próba połączenia z:</span>
+                <div class="mt-2 mb-3 p-2 bg-black bg-opacity-25 rounded border border-secondary border-opacity-25 font-monospace text-break text-danger-emphasis fw-bold user-select-all" id="blocked-domain">
+                <!-- domena zablokowana -->
+                </div>
+            </div>
+
             <p class="text-secondary mb-4">
                 AdGuard Home zablokował dostęp do tej strony.<br>
                 Znajduje się ona na liście blokowanych domen ze względu na bezpieczeństwo lub niechciane treści.
@@ -40,6 +47,16 @@
         Chronione przez AdGuard Home
     </footer>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const domain = window.location.hostname;
+        const displayElement = document.getElementById('blocked-domain');
+        if (displayElement) {
+            displayElement.textContent = domain || window.location.host;
+        }
+    });
+</script>
 
 </body>
 </html>
