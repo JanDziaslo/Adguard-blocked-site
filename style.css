@@ -1,0 +1,32 @@
+:root {
+    --adguard-green: #68bc71;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1d21 0%, #212529 100%);
+    min-height: 100vh;
+}
+
+.card {
+    background-color: rgba(33, 37, 41, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-adguard {
+    background-color: var(--adguard-green);
+    border-color: var(--adguard-green);
+    color: white;
+    font-weight: 500;
+}
+
+.btn-adguard:hover {
+    background-color: #55a360;
+    border-color: #55a360;
+    color: white;
+}
+
+.adguard-icon {
+    filter: drop-shadow(0 0 15px rgba(104, 188, 113, 0.3));
+}
+

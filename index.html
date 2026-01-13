@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona zablokowana</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/adguard.png">
+</head>
+<body>
+<div class="container d-flex flex-column min-vh-100 justify-content-center align-items-center">
+    <div class="card shadow-lg rounded-4 p-4 text-center" style="max-width: 500px; width: 100%;">
+        <div class="card-body">
+            <div class="mb-4">
+                <img src="img/adguard.png" alt="AdGuard Logo" class="adguard-icon" width="96" height="96">
+            </div>
+            
+            <h1 class="h3 fw-bold mb-3">Strona zablokowana</h1>
+            
+            <p class="text-secondary mb-4">
+                AdGuard Home zablokował dostęp do tej strony.<br>
+                Znajduje się ona na liście blokowanych domen ze względu na bezpieczeństwo lub niechciane treści.
+            </p>
+    
+            <div class="d-grid gap-2 col-10 mx-auto">
+                <a href="javascript:history.back()" class="btn btn-adguard btn-lg rounded-pill shadow-sm">
+                    Wróć bezpiecznie
+                </a>
+            </div>
+    
+            <div class="mt-4 pt-3 border-top border-secondary border-opacity-10">
+                <small class="text-muted opacity-75">
+                    Jeśli uważasz, że to błąd, skontaktuj się z administratorem sieci.
+                </small>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="mt-5 text-muted small opacity-50">
+        Chronione przez AdGuard Home
+    </footer>
+</div>
+
+</body>
+</html>
